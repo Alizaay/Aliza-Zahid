@@ -18,7 +18,7 @@ export function Contact({ contact, socialLinks }) {
           <Info icon={FaWhatsapp} title={contact.phone} label="Chat on WhatsApp" href={contact.whatsapp} />
           <Info icon={HiOutlineEnvelope} title={contact.emails[0]} label={contact.emails[1]} href={`mailto:${contact.emails[0]}`} />
           <Info icon={HiOutlineMapPin} title={contact.location} label={contact.availability} href={`https://maps.google.com/?q=${encodeURIComponent(contact.location)}`} />
-          <Info icon={HiOutlineGlobeAlt} title={contact.website} label="Portfolio website" href={`https://${contact.website}`} />
+          <Info icon={HiOutlineGlobeAlt} title={contact.website} label="Portfolio website" href={contact.website} />
           <Info icon={HiOutlineClock} title={contact.hours} label={contact.response} href={contact.whatsapp} />
         </div>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">

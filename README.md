@@ -20,7 +20,8 @@ npm install
 npm run dev
 ```
 
-Site: http://localhost:5173
+Site: http://localhost:5173  
+Live: https://aliza-zahid.vercel.app/
 
 ```bash
 npm run build

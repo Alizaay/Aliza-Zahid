@@ -26,6 +26,9 @@ export function Footer() {
           <div>
             <p className="text-sm font-semibold">{site.contact.phone}</p>
             <p className="mt-1 text-sm text-muted">{site.contact.emails[0]}</p>
+            <a href={site.contact.website} className="mt-1 block text-sm text-muted hover:text-cyan">
+              {site.contact.website}
+            </a>
             <p className="mt-1 text-sm text-muted">{site.contact.location}</p>
             <div className="mt-4">
               <SocialLinks links={site.socialLinks} />

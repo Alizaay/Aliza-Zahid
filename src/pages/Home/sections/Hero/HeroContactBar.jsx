@@ -12,9 +12,9 @@ export function HeroContactBar({ contact }) {
     },
     {
       icon: HiOutlineGlobeAlt,
-      title: contact.website || "alizadev.vercel.app",
+      title: contact.website || "https://aliza-zahid.vercel.app/",
       label: "Website",
-      href: contact.website ? `https://${contact.website}` : "/#home",
+      href: contact.website || "https://aliza-zahid.vercel.app/",
     },
     { icon: HiOutlineMapPin, title: contact.availability, label: "Let’s Build Something Amazing", href: "/#contact" },
   ];
