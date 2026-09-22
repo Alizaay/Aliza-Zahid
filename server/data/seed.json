@@ -1,0 +1,367 @@
+{
+  "profile": {
+    "name": "Aliza Zahid",
+    "brand": "AlizaDev",
+    "roles": ["Software Developer", "AI Solutions Expert", "Tech Entrepreneur"],
+    "headline": "Building Digital Solutions That Drive Success.",
+    "headlineAccent": "Drive Success",
+    "description": "I create modern web applications, AI-powered solutions, and scalable software that help businesses grow, automate, and achieve exceptional results.",
+    "aboutTitle": "Turning Ideas Into Digital Excellence.",
+    "aboutAccent": "Digital Excellence",
+    "biography": [
+      "Hi, I’m Aliza Zahid, a passionate Software Developer and Tech Entrepreneur. I specialize in building modern web applications, AI-powered solutions, and scalable software that help businesses grow and stand out.",
+      "With a strong foundation in full stack development and a deep interest in emerging technologies, I love transforming complex problems into simple, beautiful, and impactful digital experiences."
+    ],
+    "heroServices": [
+      { "id": "web", "label": "Web Development", "icon": "Code" },
+      { "id": "mobile", "label": "Mobile App Development", "icon": "Smartphone" },
+      { "id": "uiux", "label": "UI/UX Design", "icon": "Design" },
+      { "id": "ai", "label": "AI & Software Solutions", "icon": "Cpu" }
+    ],
+    "positioning": "Available worldwide for product builds, technical leadership, and AI-assisted software delivery.",
+    "image": "",
+    "imageAlt": "Aliza Zahid portrait",
+    "experience": [
+      {
+        "id": "cto",
+        "role": "Chief Technology Officer",
+        "company": "Alliance Software Solutions",
+        "period": "2024 — Present",
+        "location": "Sialkot, Pakistan",
+        "detail": "Leading web, mobile, and AI product delivery for clients across software, commerce, and services."
+      },
+      {
+        "id": "webtrixsol",
+        "role": "Frontend Web Developer",
+        "company": "Webtrixsol",
+        "period": "Current",
+        "location": "Remote",
+        "detail": "Building high-performance interfaces and component systems for production web products."
+      },
+      {
+        "id": "alizadev",
+        "role": "Software Developer & Founder",
+        "company": "AlizaDev",
+        "period": "2022 — Present",
+        "location": "Available Worldwide",
+        "detail": "Designing and shipping custom websites, dashboards, and AI-assisted software for international clients."
+      }
+    ],
+    "education": [
+      {
+        "id": "bscs",
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Computer Science Program",
+        "period": "2019 — 2023",
+        "location": "Pakistan",
+        "detail": "Software engineering, web systems, data structures, and applied programming — the foundation behind AlizaDev product work."
+      },
+      {
+        "id": "practice",
+        "degree": "Full Stack & AI Product Practice",
+        "institution": "Professional Development",
+        "period": "Ongoing",
+        "location": "Worldwide",
+        "detail": "Continuous work in React, Node.js, product architecture, and AI-powered software delivery."
+      }
+    ],
+    "stats": [
+      { "id": "projects", "value": "20+", "label": "Projects Completed", "icon": "Rocket" },
+      { "id": "experience", "value": "5+", "label": "Years of Experience", "icon": "Users" },
+      { "id": "technologies", "value": "30+", "label": "Technologies Mastered", "icon": "Code" },
+      { "id": "clients", "value": "10+", "label": "Happy Clients", "icon": "Star" },
+      { "id": "countries", "value": "10+", "label": "Countries Served", "icon": "Globe" },
+      { "id": "satisfaction", "value": "100%", "label": "Client Satisfaction", "icon": "Trophy" }
+    ]
+  },
+  "services": [
+    {
+      "id": "web-development",
+      "title": "Web Development",
+      "icon": "Code",
+      "description": "Responsive, high-performing websites and web apps that represent a brand clearly and convert with intent.",
+      "features": ["Custom Website Development", "Frontend Development", "Backend Development", "CMS Development"]
+    },
+    {
+      "id": "mobile-app-development",
+      "title": "Mobile App Development",
+      "icon": "Smartphone",
+      "description": "Android and iOS experiences that feel native, stay fast, and support real business workflows.",
+      "features": ["Android App Development", "iOS App Development", "Cross-Platform Apps", "UI/UX Design"]
+    },
+    {
+      "id": "ai-software-development",
+      "title": "AI Software Development",
+      "icon": "Cpu",
+      "description": "Intelligent systems that automate work, surface insight, and add adaptive capability to existing products.",
+      "features": ["AI Integration", "Machine Learning", "Chatbot Development", "Data Analysis & Prediction"]
+    },
+    {
+      "id": "software-development",
+      "title": "Software Development",
+      "icon": "Terminal",
+      "description": "Custom platforms built around operations — from dashboards to internal tools and scalable product cores.",
+      "features": ["Custom Software Solutions", "Enterprise Applications", "API Development", "System Integration"]
+    }
+  ],
+  "technologies": [
+    { "id": "react", "name": "React", "category": "Frontend", "logo": "", "experience": "Advanced" },
+    { "id": "nextjs", "name": "Next.js", "category": "Frontend", "logo": "", "experience": "Intermediate" },
+    { "id": "javascript", "name": "JavaScript", "category": "Frontend", "logo": "", "experience": "Advanced" },
+    { "id": "typescript", "name": "TypeScript", "category": "Frontend", "logo": "", "experience": "Intermediate" },
+    { "id": "tailwind", "name": "Tailwind CSS", "category": "Frontend", "logo": "", "experience": "Advanced" },
+    { "id": "bootstrap", "name": "Bootstrap", "category": "Frontend", "logo": "", "experience": "Advanced" },
+    { "id": "nodejs", "name": "Node.js", "category": "Backend", "logo": "", "experience": "Intermediate" },
+    { "id": "express", "name": "Express", "category": "Backend", "logo": "", "experience": "Intermediate" },
+    { "id": "laravel", "name": "PHP / Laravel", "category": "Backend", "logo": "", "experience": "Intermediate" },
+    { "id": "mongodb", "name": "MongoDB", "category": "Database", "logo": "", "experience": "Intermediate" },
+    { "id": "mysql", "name": "MySQL", "category": "Database", "logo": "", "experience": "Intermediate" },
+    { "id": "firebase", "name": "Firebase", "category": "Cloud / Tools", "logo": "", "experience": "Intermediate" },
+    { "id": "aws", "name": "AWS", "category": "Cloud / Tools", "logo": "", "experience": "Working" },
+    { "id": "vercel", "name": "Vercel", "category": "Cloud / Tools", "logo": "", "experience": "Advanced" },
+    { "id": "github", "name": "GitHub", "category": "Cloud / Tools", "logo": "", "experience": "Advanced" }
+  ],
+  "projects": [
+    {
+      "id": "alliance-soft",
+      "slug": "alliance-soft",
+      "title": "AllianceSoft",
+      "category": "IT Company Website",
+      "status": "completed",
+      "featured": true,
+      "year": 2025,
+      "summary": "Official website for Alliance Software Solutions — web, mobile, and AI products from Sialkot.",
+      "description": "A conversion-ready company platform covering services, leadership, and client acquisition for Alliance Software Solutions.",
+      "features": ["Service storytelling", "Responsive brand system", "Lead-oriented contact paths", "Performance-focused layout"],
+      "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "https://www.alliancesoftwaresolutions.com/",
+      "githubUrl": "https://github.com/Alizaay/AllianceSoft-website"
+    },
+    {
+      "id": "ages-tech",
+      "slug": "ages-tech",
+      "title": "AGES-TECH",
+      "category": "IT Solutions & Services Website",
+      "status": "completed",
+      "featured": true,
+      "year": 2025,
+      "summary": "Company website with a structured service narrative and conversion-ready sections.",
+      "description": "Corporate web presence for AGES TECH with clear hierarchy, service modules, and a brand-consistent visual system.",
+      "features": ["Service modules", "Brand hierarchy", "Responsive layouts", "Clear CTAs"],
+      "technologies": ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Alizaay/AGES-TECH-website"
+    },
+    {
+      "id": "rustum-dynamic",
+      "slug": "rustum-dynamic",
+      "title": "Rustum Dynamic",
+      "category": "Construction Company Website",
+      "status": "completed",
+      "featured": true,
+      "year": 2025,
+      "summary": "Dynamic operations dashboard for tracking activity, records, and live business data.",
+      "description": "An operations interface designed for dense data views, record tracking, and day-to-day business visibility.",
+      "features": ["Live data views", "Record management", "Dense dashboard UI", "Operational workflows"],
+      "technologies": ["WordPress", "PHP", "Elementor", "AOS"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Alizaay/Rustum-Dynamic-Dashboard"
+    },
+    {
+      "id": "delekys",
+      "slug": "delekys",
+      "title": "Deleky's",
+      "category": "Management Consulting Website",
+      "status": "completed",
+      "featured": true,
+      "year": 2024,
+      "summary": "Paired marketing site and dashboard connecting brand presence with operations.",
+      "description": "A product suite that joins a public web experience with an internal dashboard for operational control.",
+      "features": ["Marketing site", "Admin dashboard", "Shared product language", "Web + ops pairing"],
+      "technologies": ["React", "Tailwind CSS", "EmailJS", "React Icons"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Alizaay/deleky"
+    },
+    {
+      "id": "diet-plan-30",
+      "slug": "diet-plan-30",
+      "title": "Diet Plan 30",
+      "category": "Diet Plan Scheduling Platform",
+      "status": "completed",
+      "featured": true,
+      "year": 2025,
+      "summary": "A 30-day diet planning product for structured meal guidance and progress tracking.",
+      "description": "A focused health product that organizes meal plans, daily targets, and user progress into a simple guided experience.",
+      "features": ["30-day plan structure", "Meal guidance", "Progress tracking", "Mobile-friendly UI"],
+      "technologies": ["React", "Node.js", "MongoDB", "JWT"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "cart360",
+      "slug": "character360",
+      "title": "Character360",
+      "category": "School Operations Management System",
+      "status": "in-development",
+      "featured": false,
+      "year": 2025,
+      "summary": "Commerce experience focused on catalog flow, cart logic, and a sharper storefront.",
+      "description": "An e-commerce storefront built around product discovery, cart experience, and a clean checkout path.",
+      "features": ["Product catalog", "Cart experience", "Responsive storefront", "Checkout-ready UI"],
+      "technologies": ["React", "Node.js", "MongoDB", "Chart.js"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "radc-machinery",
+      "slug": "radc-cms",
+      "title": "RADC",
+      "category": "Construction Management System",
+      "status": "in-development",
+      "featured": false,
+      "year": 2025,
+      "summary": "Industrial machinery website for product showcasing and business inquiries.",
+      "description": "A machinery brand site designed to present equipment, capabilities, and inquiry paths with a professional industrial tone.",
+      "features": ["Equipment showcase", "Capability pages", "Inquiry paths", "Industrial brand system"],
+      "technologies": ["Next.js", "Tailwind CSS", "Node.js", "Chart.js"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "force-apparel",
+      "slug": "force-apparel",
+      "title": "Forge Apparel",
+      "category": "Uniform & Apparel Website",
+      "status": "in-development",
+      "featured": false,
+      "year": 2024,
+      "summary": "Apparel commerce experience focused on product presentation and branded catalog flow.",
+      "description": "A fashion storefront with stronger product presentation and a branded shopping narrative.",
+      "features": ["Catalog presentation", "Brand-led visuals", "Product detail flow", "Responsive commerce UI"],
+      "technologies": ["Next.js", "Tailwind CSS", "Stripe", "Framer Motion"],
+      "thumbnail": "",
+      "hero": "",
+      "screenshots": [],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/Alizaay/Force-Apperal"
+    }
+  ],
+  "contact": {
+    "title": "Let’s build the next product with precision.",
+    "description": "Reach out directly by phone, WhatsApp, or email. I work with clients worldwide from Kashmir Road, Sialkot.",
+    "phone": "03246130318",
+    "whatsapp": "https://wa.me/923246130318",
+    "emails": ["alizazahid247@gmail.com", "alizadeveloper2@gmail.com"],
+    "location": "Kashmir Road, Sialkot",
+    "website": "alizadev.vercel.app",
+    "availability": "Available Worldwide"
+  },
+  "companies": [
+    { "id": "alliance", "name": "AllianceSoft" },
+    { "id": "ages", "name": "AGES TECH" },
+    { "id": "rustum", "name": "Rustum" },
+    { "id": "delekys", "name": "Delekys" },
+    { "id": "diet", "name": "Diet Plan 30" },
+    { "id": "radc", "name": "RADC" },
+    { "id": "forge", "name": "Forge Apparel" },
+    { "id": "character", "name": "Character360" }
+  ],
+  "process": [
+    { "id": "discover", "step": "01", "title": "Discover", "description": "Clarify goals, users, and the outcome the product must deliver." },
+    { "id": "design", "step": "02", "title": "Design", "description": "Shape the interface, flows, and system language before a line is rushed." },
+    { "id": "develop", "step": "03", "title": "Develop", "description": "Build the web, mobile, or AI product on a clean, maintainable stack." },
+    { "id": "test", "step": "04", "title": "Test", "description": "Validate performance, responsiveness, and the real user path." },
+    { "id": "launch", "step": "05", "title": "Launch", "description": "Ship to production with a stable release path and clear ownership." },
+    { "id": "support", "step": "06", "title": "Support", "description": "Iterate after launch so the product stays fast, secure, and useful." }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote": "The AllianceSoft site finally matches the quality of the work we deliver. Clean, fast, and easy for clients to trust.",
+      "role": "Leadership",
+      "company": "Alliance Software Solutions"
+    },
+    {
+      "id": "t2",
+      "quote": "From the first wire to launch, the process stayed clear. The dashboard is something the team actually uses every day.",
+      "role": "Operations",
+      "company": "Rustum"
+    },
+    {
+      "id": "t3",
+      "quote": "We needed a company site that felt modern without becoming noisy. The result is sharp, mobile-ready, and conversion-focused.",
+      "role": "Founder",
+      "company": "AGES TECH"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "f1",
+      "question": "What kind of products do you build?",
+      "answer": "Web platforms, mobile apps, dashboards, AI-assisted software, and custom business systems — from first concept to launch."
+    },
+    {
+      "id": "f2",
+      "question": "How do projects usually start?",
+      "answer": "A short discovery call, then a scoped plan covering architecture, interface, timeline, and delivery milestones."
+    },
+    {
+      "id": "f3",
+      "question": "Do you work with clients outside Pakistan?",
+      "answer": "Yes. I am based in Sialkot and available worldwide for remote product work and technical leadership."
+    },
+    {
+      "id": "f4",
+      "question": "Can you take over an existing codebase?",
+      "answer": "Yes. I regularly improve, redesign, and extend products that are already in production."
+    },
+    {
+      "id": "f5",
+      "question": "Is there a contact form?",
+      "answer": "Not in the current design. Reach out directly by WhatsApp, phone, or email and we can start from there."
+    }
+  ],
+  "socialLinks": [
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/aliza-zahid-850296247/"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "href": "https://github.com/Alizaay"
+    }
+  ],
+  "navigation": [
+    { "label": "Home", "href": "/#home" },
+    { "label": "Services", "href": "/#services" },
+    { "label": "About", "href": "/#about" },
+    { "label": "Experience", "href": "/#experience" },
+    { "label": "Technology", "href": "/#technology" },
+    { "label": "Process", "href": "/#process" },
+    { "label": "Projects", "href": "/#projects" },
+    { "label": "Contact", "href": "/#contact" }
+  ]
+}

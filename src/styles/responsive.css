@@ -1,0 +1,6 @@
+@media (max-width: 640px) {
+  .section-space {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}

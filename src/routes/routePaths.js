@@ -1,0 +1,16 @@
+export const routePaths = {
+  home: "/",
+  projects: "/projects",
+  projectDetails: (slug) => `/projects/${slug}`,
+  admin: "/admin",
+  adminLogin: "/admin/login",
+  adminProfile: "/admin/profile",
+  adminProjects: "/admin/projects",
+  adminProjectNew: "/admin/projects/new",
+  adminProjectEdit: (id) => `/admin/projects/${id}`,
+  adminServices: "/admin/services",
+  adminTechnologies: "/admin/technologies",
+  adminContact: "/admin/contact",
+  adminMedia: "/admin/media",
+  adminExperience: "/admin/experience",
+};

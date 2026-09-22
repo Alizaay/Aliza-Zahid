@@ -1,17 +1,17 @@
 # AlizaDev Portfolio
 
-Premium portfolio for Aliza Zahid with a feature-based React frontend and a content dashboard for images, projects, services, technologies, and contact data.
+Premium static portfolio for Aliza Zahid. Built with React and Vite. Content lives in `src/data/site.json` so the public site runs without a backend.
+
+The admin dashboard and Express API are in the repo for a later integration. They are not wired into the live site yet.
 
 ## Architecture
 
 ```
 Browser → main.jsx → App.jsx → AppRoutes
-  ├── MainLayout → Home sections (#home #about #services #technology #projects #contact)
-  ├── /projects and /projects/:slug
-  └── /admin dashboard → Express API → JSON store + uploads
+  ├── MainLayout → Home (#home #about #services #experience #technology #projects #contact)
+  ├── /projects
+  └── /projects/:slug
 ```
-
-Public pages read from `GET /api/content`. The dashboard writes the same store, so uploads and edits appear on the live site without editing code.
 
 ## Scripts
 
@@ -20,32 +20,30 @@ npm install
 npm run dev
 ```
 
-- Site: http://localhost:5173
-- Dashboard: http://localhost:5173/admin/login
-- API: http://localhost:5000/api/health
+Site: http://localhost:5173
 
-## Admin login
+```bash
+npm run build
+npm run preview
+```
 
-Defaults from `.env`:
+## Content
 
-- Email: `alizadeveloper2@gmail.com`
-- Password: `AlizaDev@2026`
+Edit `src/data/site.json` to update profile, experience, education, projects, services, technologies, testimonials, FAQs, and contact details.
 
-Change these before any public deploy. Never put private API keys in `VITE_*` variables.
+Images live in `public/images/`.
 
-## Dashboard
+## Later: admin dashboard
 
-From `/admin` you can:
+`server/` and `src/pages/admin/` stay in the repo. When you are ready to connect the dashboard:
 
-- Upload a profile photo
-- Create / edit / delete projects
-- Upload thumbnails, hero images, and screenshots
-- Edit services and technology logos
-- Update phone, emails, location, and social links
-- Manage the media library
+```bash
+npm run server
+npm run dev:full
+```
 
-Uploaded files are stored in `server/uploads` and served from `/uploads/...`.
+Dashboard login and API details will be documented again when that work starts.
 
 ## Stack
 
-React 19, Vite, Tailwind CSS, React Router, Framer Motion, TanStack Query, Axios, Express, Multer, JWT.
+React 19, Vite, Tailwind CSS, React Router, Framer Motion.
