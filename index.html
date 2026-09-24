@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -18,6 +18,16 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://aliza-zahid.vercel.app/" />
     <link rel="canonical" href="https://aliza-zahid.vercel.app/" />
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("alizadev.theme");
+          document.documentElement.setAttribute("data-theme", saved === "light" ? "light" : "dark");
+        } catch (_) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

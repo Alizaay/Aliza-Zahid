@@ -4,6 +4,7 @@ import { useScrollPosition } from "../../hooks/useScrollPosition";
 import { useSiteData } from "../../hooks/useSiteContent";
 import { cn } from "../../utils/cn";
 import { Logo } from "../common/Logo";
+import { ThemeToggle } from "../common/ThemeToggle";
 import { Button } from "../ui/Button";
 import { DesktopNav } from "./DesktopNav";
 import { MobileMenuButton } from "./MobileMenuButton";
@@ -57,18 +58,22 @@ export function Navbar() {
             setServicesOpen((value) => !value);
           }}
         />
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
           <Button href="/#contact" className="min-h-10 px-5 text-xs">
             Let’s Talk
           </Button>
         </div>
-        <MobileMenuButton
-          open={open}
-          onToggle={() => {
-            setServicesOpen(false);
-            setOpen((value) => !value);
-          }}
-        />
+        <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
+          <MobileMenuButton
+            open={open}
+            onToggle={() => {
+              setServicesOpen(false);
+              setOpen((value) => !value);
+            }}
+          />
+        </div>
       </div>
       {servicesOpen && <ServicesBar services={site.services} onSelect={() => setServicesOpen(false)} />}
       <MobileNav

@@ -24,7 +24,7 @@ export function ServicesTrigger({ open, active, onToggle }) {
 
 export function ServicesBar({ services = [], onSelect }) {
   return (
-    <div className="hidden border-t border-line/60 bg-[#050d1c] lg:block">
+    <div className="hidden border-t border-line/60 bg-panel lg:block">
       <nav className="container-page grid grid-cols-4 gap-2 py-3" aria-label="Services">
         {services.map((service) => {
           const Icon = getIcon(service.icon);

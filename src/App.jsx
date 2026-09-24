@@ -1,8 +1,11 @@
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider, useTheme } from "./context/ThemeProvider";
 import { AppRoutes } from "./routes/AppRoutes";
 
-export default function App() {
+function AppShell() {
+  const { isDark } = useTheme();
+
   return (
     <BrowserRouter>
       <AppRoutes />
@@ -10,12 +13,20 @@ export default function App() {
         position="top-right"
         toastOptions={{
           style: {
-            background: "#0B1830",
-            color: "#F8FAFC",
-            border: "1px solid #173B72",
+            background: isDark ? "#0B1830" : "#FFFFFF",
+            color: isDark ? "#F8FAFC" : "#0B1B33",
+            border: `1px solid ${isDark ? "#173B72" : "#C5D6EA"}`,
           },
         }}
       />
     </BrowserRouter>
+  );
+}
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppShell />
+    </ThemeProvider>
   );
 }

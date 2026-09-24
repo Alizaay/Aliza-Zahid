@@ -3,32 +3,76 @@
 @import "./responsive.css";
 
 @theme {
-  --color-canvas: #020817;
-  --color-panel: #071226;
-  --color-panel-elevated: #0b1830;
-  --color-brand: #147cff;
-  --color-cyan: #00d9ff;
-  --color-violet: #7c3aed;
-  --color-ink: #f8fafc;
-  --color-muted: #b7c3d8;
-  --color-line: #173b72;
+  --color-canvas: var(--canvas);
+  --color-panel: var(--panel);
+  --color-panel-elevated: var(--panel-elevated);
+  --color-brand: var(--brand);
+  --color-cyan: var(--cyan);
+  --color-violet: var(--violet);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
   --font-display: "Sora", sans-serif;
   --font-body: "Inter", sans-serif;
 }
 
+:root,
+[data-theme="dark"] {
+  --canvas: #020817;
+  --panel: #071226;
+  --panel-elevated: #0b1830;
+  --brand: #147cff;
+  --cyan: #00d9ff;
+  --violet: #7c3aed;
+  --ink: #f8fafc;
+  --muted: #b7c3d8;
+  --line: #173b72;
+  --body-base: #020617;
+  --glow-a: rgb(0 210 255 / 0.12);
+  --glow-b: rgb(20 124 255 / 0.1);
+  --card-bg: rgb(7 18 38 / 0.78);
+  --card-bg-solid: rgb(7 18 38 / 0.9);
+  --icon-bg: rgb(11 24 48 / 0.9);
+  --grid-line: rgb(23 59 114 / 0.18);
+  --shadow-glow: 0 0 40px rgb(20 124 255 / 0.18);
+  --selection: rgb(20 124 255 / 0.35);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --canvas: #f3f7fc;
+  --panel: #ffffff;
+  --panel-elevated: #eef4fb;
+  --brand: #0d5fd6;
+  --cyan: #0284c7;
+  --violet: #6d28d9;
+  --ink: #0b1b33;
+  --muted: #4b6280;
+  --line: #c5d6ea;
+  --body-base: #f3f7fc;
+  --glow-a: rgb(14 165 233 / 0.12);
+  --glow-b: rgb(20 124 255 / 0.1);
+  --card-bg: rgb(255 255 255 / 0.92);
+  --card-bg-solid: rgb(255 255 255 / 0.96);
+  --icon-bg: rgb(238 244 251 / 0.95);
+  --grid-line: rgb(20 124 255 / 0.08);
+  --shadow-glow: 0 0 40px rgb(20 124 255 / 0.1);
+  --selection: rgb(20 124 255 / 0.22);
+  color-scheme: light;
+}
+
 :root {
-  --color-background: #020817;
-  --color-background-secondary: #071226;
-  --color-surface: #0b1830;
-  --color-primary: #147cff;
+  --color-background: var(--canvas);
+  --color-background-secondary: var(--panel);
+  --color-surface: var(--panel-elevated);
+  --color-primary: var(--brand);
   --color-primary-light: #2b8cff;
   --color-primary-dark: #0d5fd6;
-  --color-cyan: #00d9ff;
-  --color-text-primary: #f8fafc;
-  --color-text-secondary: #b7c3d8;
-  --color-text-muted: #8ea0ba;
-  --color-border: #173b72;
-  --shadow-glow: 0 0 40px rgb(20 124 255 / 0.18);
+  --color-cyan: var(--cyan);
+  --color-text-primary: var(--ink);
+  --color-text-secondary: var(--muted);
+  --color-text-muted: var(--muted);
+  --color-border: var(--line);
   --radius-card: 1rem;
   --radius-button: 999px;
 }
@@ -40,20 +84,20 @@
 
   body {
     @apply bg-canvas font-body text-ink antialiased;
-    background-color: #020617;
+    background-color: var(--body-base);
     background-image:
-      radial-gradient(circle at 18% 8%, rgb(0 210 255 / 0.12), transparent 28%),
-      radial-gradient(circle at 82% 18%, rgb(20 124 255 / 0.1), transparent 26%),
-      linear-gradient(#020617, #020617);
+      radial-gradient(circle at 18% 8%, var(--glow-a), transparent 28%),
+      radial-gradient(circle at 82% 18%, var(--glow-b), transparent 26%),
+      linear-gradient(var(--body-base), var(--body-base));
   }
 
   ::selection {
-    background: rgb(20 124 255 / 0.35);
-    color: #f8fafc;
+    background: var(--selection);
+    color: var(--ink);
   }
 
   :focus-visible {
-    outline: 2px solid #00d9ff;
+    outline: 2px solid var(--cyan);
     outline-offset: 3px;
   }
 
@@ -62,7 +106,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #173b72;
+    background: var(--line);
     border-radius: 999px;
   }
 }
@@ -78,8 +122,8 @@
     position: fixed;
     inset: 0;
     background-image:
-      linear-gradient(rgb(23 59 114 / 0.18) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(23 59 114 / 0.18) 1px, transparent 1px);
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
     background-size: 72px 72px;
     mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
     opacity: 0.35;
@@ -99,16 +143,17 @@
     inset-block: 8%;
     width: 72px;
     background-image:
-      radial-gradient(circle at 20% 20%, #00d9ff 1px, transparent 1.4px),
-      radial-gradient(circle at 70% 60%, #147cff 1px, transparent 1.4px),
-      linear-gradient(#147cff 1px, transparent 1px);
+      radial-gradient(circle at 20% 20%, var(--cyan) 1px, transparent 1.4px),
+      radial-gradient(circle at 70% 60%, var(--brand) 1px, transparent 1.4px),
+      linear-gradient(var(--brand) 1px, transparent 1px);
     background-size: 18px 18px, 22px 22px, 100% 46px;
     opacity: 0.28;
     mask-image: linear-gradient(transparent, black 20%, black 80%, transparent);
   }
 
   .glow-card {
-    @apply rounded-2xl border border-line/80 bg-[rgb(7_18_38_/_0.78)] shadow-[0_0_40px_rgb(20_124_255_/_0.12)] backdrop-blur-md transition duration-300;
+    @apply rounded-2xl border border-line/80 shadow-[0_0_40px_rgb(20_124_255_/_0.12)] backdrop-blur-md transition duration-300;
+    background: var(--card-bg);
   }
 
   .glow-card-violet {
@@ -124,15 +169,18 @@
   }
 
   .portrait-stat {
-    @apply rounded-2xl border border-cyan/35 bg-[rgb(7_18_38_/_0.9)] px-3.5 py-3 shadow-[0_10px_30px_rgb(0_217_255_/_0.18)] backdrop-blur-md;
+    @apply rounded-2xl border border-cyan/35 px-3.5 py-3 shadow-[0_10px_30px_rgb(0_217_255_/_0.18)] backdrop-blur-md;
+    background: var(--card-bg-solid);
   }
 
   .icon-glow {
-    @apply grid place-items-center rounded-2xl border border-cyan/40 bg-[rgb(11_24_48_/_0.9)] text-cyan shadow-[0_0_22px_rgb(0_217_255_/_0.35)];
+    @apply grid place-items-center rounded-2xl border border-cyan/40 text-cyan shadow-[0_0_22px_rgb(0_217_255_/_0.35)];
+    background: var(--icon-bg);
   }
 
   .icon-glow-round {
-    @apply grid place-items-center rounded-full border border-cyan/50 bg-[rgb(11_24_48_/_0.95)] text-cyan shadow-[0_0_18px_rgb(0_217_255_/_0.45)];
+    @apply grid place-items-center rounded-full border border-cyan/50 text-cyan shadow-[0_0_18px_rgb(0_217_255_/_0.45)];
+    background: var(--icon-bg);
   }
 
   .field {
@@ -144,11 +192,22 @@
   }
 
   .gradient-text {
-    background: linear-gradient(120deg, #f8fafc 10%, #00d9ff 52%, #147cff 100%);
+    background: linear-gradient(120deg, var(--ink) 10%, var(--cyan) 52%, var(--brand) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+}
+
+[data-theme="light"] .gradient-text {
+  background: linear-gradient(120deg, #0b1b33 8%, #0284c7 48%, #0d5fd6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="light"] .page-shell::before {
+  opacity: 0.55;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,7 +1,10 @@
 import { StatusBadge } from "../../components/common/StatusBadge";
 import { Container } from "../../components/ui/Container";
+import { getProjectImage } from "../../data/projectImages";
 
 export function ProjectHero({ project }) {
+  const image = getProjectImage(project);
+
   return (
     <section className="border-b border-line/60 pt-28 pb-12 sm:pt-32">
       <Container>
@@ -11,11 +14,11 @@ export function ProjectHero({ project }) {
         <p className="mt-3 text-xs tracking-[0.18em] text-muted uppercase">
           {project.category} · {project.year}
         </p>
-        {(project.hero || project.thumbnail) && (
+        {image && (
           <img
-            src={project.hero || project.thumbnail}
+            src={image}
             alt={project.title}
-            className="mt-8 max-h-[420px] w-full rounded-2xl border border-line object-cover"
+            className="mt-8 max-h-[420px] w-full rounded-2xl border border-line object-cover object-top"
           />
         )}
       </Container>

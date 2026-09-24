@@ -56,7 +56,7 @@ export function Projects({ projects, preview = false }) {
       <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
         <div>
           <SectionBadge>Featured Projects</SectionBadge>
-          <HighlightTitle text="8 Digital Solutions Built. Delivered." accent="Delivered" className="text-3xl sm:text-4xl" />
+          <HighlightTitle text={`${completed.length} Digital Solutions Built. Delivered.`} accent="Delivered" className="text-3xl sm:text-4xl" />
           <p className="mt-4 text-sm text-muted">Creating Real Impact.</p>
           <Button href="/#projects" variant="secondary" className="mt-5">
             Completed Projects
@@ -81,6 +81,7 @@ export function Projects({ projects, preview = false }) {
         <ProjectGrid projects={completed} />
       </div>
 
+      {developing.length > 0 && (
       <div className="mt-20 grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
         <div>
           <SectionBadge tone="violet">In Development</SectionBadge>
@@ -101,6 +102,7 @@ export function Projects({ projects, preview = false }) {
         </div>
         <ProjectGrid projects={developing} />
       </div>
+      )}
 
       <div className="glow-card mt-12 grid gap-4 px-5 py-6 sm:grid-cols-2 lg:grid-cols-7">
         {trust.map((item) => {
